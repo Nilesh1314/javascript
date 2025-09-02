@@ -31,4 +31,31 @@ const my_function = function() {
     console.log("Hello World")
 } // Function expression
 
-console.log(typeof my_function) 
+// console.log(typeof my_function) 
+
+
+// +++++++++++++++++++++++++++++++++++++++++
+// +++++++++++ Stack (Primitive) Memory & Heap (Non-Primitive) Memory
+
+let my_name = "Nilesh"
+
+let another_name = my_name
+another_name = "Nilesh B"
+
+// console.log(my_name) // Nilesh
+// console.log(another_name) // Nilesh
+
+
+let user = {
+    name: "Nilesh",
+    age: 23,
+    email: "nilesh@gmail.com",
+    upi_id: "nilesh@okaxis"
+}
+
+let user2 = user
+
+user2.email = "nileshb@gmail.com"
+
+console.log(user.email) //
+console.log(user2.email) //
